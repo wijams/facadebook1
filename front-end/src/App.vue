@@ -15,6 +15,10 @@
   </div>
   <div class="footer">
     <router-link to="/admin">Admin</router-link>
+    <div class="git">
+       <h3>Git Hub</h3>
+       <a href="https://github.com/BYUCS260/museum-wijams">Git Repo</a>
+    </div>
   </div>
 </div>
 </template>
@@ -55,7 +59,7 @@ body {
 
 /* Footer */
 .footer {
-  height: 50px;
+  height: 150px;
   padding: 20px 100px 0px 100px;
   background: #e3e3e3;
   font-size: 12px;
@@ -63,6 +67,11 @@ body {
 
 .footer a {
   color: #000;
+}
+
+.git {
+  text-align: center;
+  justify-content: center;
 }
 
 h1 {

@@ -30,7 +30,7 @@ app.post('/api/items', async (req, res) => {
 });
 const multer = require('multer')
 const upload = multer({
-    dest: '../front-end/public/images/',
+    dest: '/var/www/lab4.wesleyijams.com/images/',
     limits: {
         fileSize: 10000000
     }

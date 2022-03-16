@@ -8,10 +8,6 @@
         </div>
     </section>
 </div>
-<div class="footer">
-    <h3>Git Hub</h3>
-    <a href="https://github.com/BYUCS260/museum-wijams">Git Repo</a>
-</div>
 </template>
 
 <script>
@@ -67,6 +63,10 @@ export default {
         .image img {
             width: 100%;
         }
+    .footer {
+        text-align: center;
+        justify-content: center;
+    }
 
     /* Masonry on large screens */
     @media only screen and (min-width: 1024px) {
