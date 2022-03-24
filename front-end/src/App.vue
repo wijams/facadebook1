@@ -1,84 +1,76 @@
 <template>
-<div id="app">
-  <div class="header">
-    <router-link to="/">
-      <div class="logo">
-        <img src="/ordinary.png">
-      </div>
-    </router-link>
-    <div class="title">
-      <h1>Museum of Ordinary Objects</h1>
+    <div id="app">
+        <div class="header">
+            <router-link to="/">
+                <div class="logo">
+                    <img src="masks.png">
+                </div>
+            </router-link>
+            <div class="title">
+                <h1>Facade Book</h1>
+            </div>
+        </div>
+        <nav>
+            <router-link to="/">Home</router-link> |
+            <router-link to="/profile">Profile</router-link>
+        </nav>
+        <router-view />
+        <div class="footer">
+            <hr />
+            <h3>Git Hub</h3>
+            <a href="https://github.com/wijams/facadebook">Git Repo</a>
+        </div>
     </div>
-  </div>
-  <div class="content">
-    <router-view />
-  </div>
-  <div class="footer">
-    <router-link to="/admin">Admin</router-link>
-    <div class="git">
-       <h3>Git Hub</h3>
-       <a href="https://github.com/BYUCS260/museum-wijams">Git Repo</a>
-    </div>
-  </div>
-</div>
 </template>
 
 <style>
-html {
-  box-sizing: border-box;
-}
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  background: #fff;
-  padding: 0px;
-  margin: 0px;
-}
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
 
-/* Header */
-.header {
-  display: flex;
-  padding: 10px 100px 0px 100px;
-  background-color: #5BDEFF;
-  color: #1C454F;
-}
+    #app {
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+    }
 
-.title {
-  margin-top: 5px;
-}
+    .header {
+        display: flex;
+        background-color: #7a52aa;
+        width: 100%;
+        color: white;
+    }
 
-.title h1 {
-  font-size: 30px;
-}
+    .logo img {
+        width: 100px;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+    }
 
-.content {
-  padding: 20px 100px;
-  min-height: 500px;
-}
+    .title {
+        margin-top: 20px;
+    }
 
-/* Footer */
-.footer {
-  height: 150px;
-  padding: 20px 100px 0px 100px;
-  background: #e3e3e3;
-  font-size: 12px;
-}
+        .title h1 {
+            margin-left: 10px;
+            font-size: 30px;
+        }
 
-.footer a {
-  color: #000;
-}
+    nav {
+        padding: 30px;
+    }
 
-.git {
-  text-align: center;
-  justify-content: center;
-}
+        nav a {
+            font-weight: bold;
+            color: #2c3e50;
+        }
 
-h1 {
-  font-size: 20px;
-}
-
-h2 {
-  font-size: 14px;
-}
+            nav a.router-link-exact-active {
+                color: #42b983;
+            }
 </style>
